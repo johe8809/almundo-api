@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "lib": [
+      "dom",
+      "es2015.core",
+      "es5",
+      "es2015.promise"
+    ],
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": false,
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "src/app/components/**/*"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}

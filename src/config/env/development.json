@@ -1,0 +1,7 @@
+{
+    "server": {
+        "env": "development",
+        "port": 5001,
+        "db": "mongodb://user_db:almundo2018@ds153869.mlab.com:53869/almundo_db"
+    }
+}

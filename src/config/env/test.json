@@ -1,0 +1,7 @@
+{
+    "server": {
+        "env": "test",
+        "port": 3000,
+        "db": "mongodb://db_user:almundo@ds139446.mlab.com:39446/hotelsdb"
+    }
+}

@@ -3,6 +3,7 @@ import 'jest';
 import InfraApp from './core/InfraApp';
 import { db } from './config/database';
 import { middlewareServer } from './middlewares';
+import { errorMiddleware } from './middlewares'
 import { routerServer } from './routes';
 
 export default class Server extends InfraApp {
@@ -10,6 +11,7 @@ export default class Server extends InfraApp {
         super();
         db.connect();
         this.mountMiddlewares(middlewareServer);
+        this.mountErrorMiddleware(errorMiddleware);
         this.mountRoutes(routerServer);
     }
     public static bootstrap(): Server {

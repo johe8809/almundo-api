@@ -1,13 +1,5 @@
-import mongoose, { Model } from 'mongoose';
+import { model } from 'mongoose';
 import FlightSchema from './schema';
+import { IFlight } from '../../interfaces';
 
-export interface IFlight extends mongoose.Document {
-    destination: {
-        iata: string,
-        name: string
-    },
-    image: string,
-    price: string,
-    segments: string
-}
-export default mongoose.model<IFlight>('Flight', FlightSchema);
+export default model<IFlight>('Flight', FlightSchema);

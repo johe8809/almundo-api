@@ -10,5 +10,13 @@ export const fligthController = {
         } catch (error) {
             next({error});
         }
+    },
+    getFlightsQs: async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const data = await services.getFlightsQs(req.query);
+            return res.send({ data });
+        } catch (error) {
+            next({error});
+        }
     }
 };

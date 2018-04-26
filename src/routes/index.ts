@@ -10,5 +10,10 @@ export const routerServer = {
         verb: 'get',
         mountPoint: '/flight/:id',
         handler: fligthController.getFlights
+    },
+    getFlightsQS: {
+        verb: 'get',
+        mountPoint: '/flights',
+        handler: fligthController.getFlightsQs
     }
 }

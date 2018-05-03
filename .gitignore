@@ -2,3 +2,4 @@ node_modules
 .tscache
 package-lock.json
 dist
+coverage

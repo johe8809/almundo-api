@@ -11,8 +11,8 @@ export default class Server extends InfraApp {
         super();
         db.connect();
         this.mountMiddlewares(middlewareServer);
-        this.mountErrorMiddleware(errorMiddleware);
         this.mountRoutes(routerServer);
+        this.mountErrorMiddleware(errorMiddleware);
     }
     public static bootstrap(): Server {
         return new Server;

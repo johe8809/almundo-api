@@ -1,5 +1,5 @@
-import { fligthController } from './flight/controller';
+import { flightRoutes } from './flight/routes';
 
 export {
-    fligthController
+    flightRoutes
 }
